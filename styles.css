@@ -82,6 +82,27 @@
     background: var(--white);
 }
 
+.hero-container{
+    width: 100%;
+    background-color: var(--darkgrey);
+}
+
+.hero-image-container{
+    transform: translate(-50%, -50%);
+}
+
+#hero-text{
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-text-description{
+    color: var(--white);
+    text-align: center;
+}
+
+
+/*Mobile View CSS and Animations*/
 @media screen and (max-width: 768px) {
     .nav-container{
         position: relative;
@@ -156,6 +177,7 @@
     .menu-toggle .bar{
         display: block;
         cursor: pointer;
+        border-radius: 5px;
     }
 
     .menu-toggle:hover{
