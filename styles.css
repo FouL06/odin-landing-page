@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root{
-    --darkgrey: #24252a;
-    --aquablue: #5ab5b6;
-    --white: #fff;
+    --darkblue: #071330;
+    --midnightblue: #0c4160;
+    --bluegray: #738fa7;
+    --mistyblue: #c3ceda;
 }
 
 *{
@@ -15,7 +16,7 @@
 
 .nav-container{
     width: 100%;
-    background-color: var(--darkgrey);
+    background-color: var(--darkblue);
 }
 
 .nav-bar{
@@ -29,7 +30,7 @@
 }
 
 #nav-bar-logo{
-    color: var(--white);
+    color: var(--mistyblue);
     justify-self: start;
     margin-left: 20x;
 }
@@ -49,28 +50,28 @@
 }
 
 .nav-links{
-    color: var(--white);
+    color: var(--mistyblue);
     text-decoration: none;
     font-size: 22px;
 }
 
 .nav-links:hover{
-    color: var(--aquablue);
+    color: var(--bluegray);
     transition: all 0.2s ease-out;
 }
 
 .nav-links-button{
-    background-color: var(--aquablue);
+    background-color: var(--midnightblue);
     padding: 6px 16px;
     border-radius: 20px;
 }
 
 .nav-links-button:hover{
     background-color: transparent;
-    color: var(--white);
+    color: var(--mistyblue);
     padding: 5px 15px;
     border-radius: 20px;
-    border: solid 2px var(--aquablue);
+    border: solid 2px var(--midnightblue);
     transition: all 0.2s ease-out;
 }
 
@@ -79,28 +80,61 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: var(--white);
+    background: var(--mistyblue);
 }
 
 .hero-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--darkblue);
+    padding: 10px 0 30px 0;
+}
+
+.hero-content{
+    color: var(--mistyblue);
+    width: 500px;
+}
+
+.hero-content h1{
+    padding: 0 0 10px 0;
+}
+
+.hero-content p{
+    padding: 0 0 30px 0;
+}
+
+.hero-content button{
+    background-color: var(--midnightblue);
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 175px;
+
+    color: var(--mistyblue);
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.hero-content button:hover{
+    background-color: transparent;
+    border: solid 2px var(--midnightblue);
+    transition: all 0.2s ease-out;
+}
+
+.hero-image{
+    height: 500;
+    width: 500px;
+}
+
+.hero-image img{
+    height: 100%;
     width: 100%;
-    background-color: var(--darkgrey);
-}
+    border-radius: 300px;
 
-.hero-image-container{
-    transform: translate(-50%, -50%);
+    box-shadow: 15px 15px 15px rgba(115, 143, 167, .25);
 }
-
-#hero-text{
-    color: var(--white);
-    text-align: center;
-}
-
-.hero-text-description{
-    color: var(--white);
-    text-align: center;
-}
-
 
 /*Mobile View CSS and Animations*/
 @media screen and (max-width: 768px) {
@@ -111,7 +145,7 @@
     .nav-menu{
         display: grid;
         grid-template-columns: auto;
-        background: var(--aquablue);
+        background: var(--midnightblue);
         margin: 0;
         width: 100%;
         position: absolute;
@@ -126,7 +160,7 @@
     }
 
     .nav-menu.active{
-        background: var(--darkgrey);
+        background: var(--darkblue);
         left: 0;
         opacity: 1;
         transition: all 0.4s ease;
@@ -140,8 +174,8 @@
     }
 
     .nav-links:hover{
-        background-color: var(--aquablue);
-        color: var(--white);
+        background-color: var(--midnightblue);
+        color: var(--mistyblue);
         transition: all 0.4s ease-out;
     }
 
@@ -153,8 +187,8 @@
         border: none;
         padding: 0;
         border-radius: 0;
-        background-color: var(--aquablue);
-        color: var(--white);
+        background-color: var(--midnightblue);
+        color: var(--mistyblue);
         transition: all 0.4s ease-out;
     }
 
@@ -162,8 +196,8 @@
         border: none;
         padding: 0;
         border-radius: 0;
-        background-color: var(--darkgrey);
-        color: var(--white);
+        background-color: var(--darkblue);
+        color: var(--mistyblue);
         transition: all 0.4s ease-out;
     }
 
@@ -194,5 +228,32 @@
 
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-container{
+        padding: 10px 20px 30px 20px;
+    }
+
+    .hero-content h1{
+        font-size: 1.5em;
+        padding: 0 0 10px 0;
+    }
+
+    .hero-content p{
+        font-size: 13px;
+        padding: 0 0 10px 0;
+    }
+
+    .hero-content button{
+        border-radius: 25px;
+        height: 40px;
+        width: 120px;
+        color: var(--mistyblue);
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .hero-image img{
+        box-shadow: 10px 10px 10px rgba(115, 143, 167, .25);
     }
 }
