@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    scrollbar-width: thin;
 }
 
 .nav-container{
@@ -136,45 +137,6 @@
     box-shadow: 15px 15px 15px rgba(115, 143, 167, .25);
 }
 
-.cards-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 400px;
-    gap: 25px 50px;
-    background-color: var(--darkblue);
-
-    padding: 0 30px 0 30px;
-}
-
-.card{
-    background-color: var(--midnightblue);
-    border-radius: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--mistyblue);
-    box-shadow: 0px 5px 10px rgba(115, 143, 167, .25);
-}
-
-.card h1{
-    margin-bottom: 10px;
-}
-
-.card img{
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
-    margin-bottom: 10px;
-}
-
-.card p{
-    width: 300px;
-    word-break: break-all;
-    white-space: normal;
-}
-
 /*Mobile View CSS and Animations*/
 @media screen and (max-width: 768px) {
     .nav-container{
@@ -294,34 +256,5 @@
 
     .hero-image img{
         box-shadow: 10px 10px 10px rgba(115, 143, 167, .25);
-    }
-
-    .cards-container{
-        display: grid;
-        grid-template-columns: 315px;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 50px 0px;
-        background-color: var(--darkblue);
-    
-        padding: 0 30px 0 30px;
-    }
-
-    .card h1{
-        font-size: 1.5em;
-        margin-top: 10px;
-    }
-
-    .card img{
-        height: 210px;
-        width: 210px;
-    }
-
-    .card p{
-        font-size: 13px;
-        text-align: center;
-        word-break: break-all;
-        white-space: normal;
-
-        margin-bottom: 10px;
     }
 }
