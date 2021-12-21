@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Portfolio Website</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav-container">
-        <nav class="nav-bar">
-           <h1 id="nav-bar-logo">Ashton Foulger</h1>
-           <div class="menu-toggle" id="mobile-menu">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-           </div>
-           <ul class="nav-menu">
-               <li><a href="#" class="nav-links">Home</a></li>
-               <li><a href="#" class="nav-links">Projects</a></li>
-               <li><a href="#" class="nav-links">About</a></li>
-               <li><a href="#" class="nav-links nav-links-button">Contact</a></li>
-           </ul> 
-        </nav>
+      <nav class="nav-bar">
+        <h1 id="nav-bar-logo">Ashton Foulger</h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">Projects</a></li>
+          <li><a href="#" class="nav-links">About</a></li>
+          <li><a href="#" class="nav-links nav-links-button">Contact</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="hero-container">
-        <div class="hero-content">
-            <h1>Programmer, Engineer, Designer</h1>
-            <p>Hello I'm Ashton Foulger. I'm studying computer science at the Univeristy of Utah.</p>
-            <button onclick="window.location.href='https://github.com/FouL06';">GitHub</button>
-        </div>
-        <div class="hero-image">
-            <img src="images/me.jpg" alt="portrait image of Ashton">
-        </div>
+      <div class="hero-content">
+        <h1>Programmer, Engineer, Designer</h1>
+        <p>
+          Hello I'm Ashton Foulger. I'm studying computer science at the
+          Univeristy of Utah.
+        </p>
+        <button onclick="window.location.href='https://github.com/FouL06';">
+          GitHub
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="images/me.jpg" alt="portrait image of Ashton" />
+      </div>
     </div>
 
-    <div class="card-container">
-        <div class="card">
-            <h1>text</h1>
-            <div>
-                <img src="" alt="">
-            </div>
-            <p>text</p>
-        </div>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      </ol>
 
-        <div class="card">
-            <h1>text</h1>
-            <div>
-                <img src="" alt="">
-            </div>
-            <p>text</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <h1>Example Headline</h1>
+            <p>example test text</p>
+          </div>
         </div>
+        <div class="carousel-item">
+          <div class="container">
+            <h1>Example Headline</h1>
+            <p>example test text</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="card">
-            <h1>text</h1>
-            <div>
-                <img src="" alt="">
-            </div>
-            <p>text</p>
-        </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
 
-        <div class="card">
-            <h1>text</h1>
-            <div>
-                <img src="" alt="">
-            </div>
-            <p>text</p>
-        </div>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
