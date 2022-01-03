@@ -7,3 +7,10 @@ menu.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
 });
+
+//Carousel Items
+let carousel = document.querySelector(".carousel-item");
+
+carousel.addEventListener("click", function () {
+  location.href = "https://github.com/FouL06?tab=repositories";
+});
